@@ -1,7 +1,7 @@
 name: 'Terraform Plan'
 
 on:
-  pull_request:
+  workflow_dispatch:
 
 env:
   TF_CLOUD_ORGANIZATION: 'YOUR-ORGANIZATION-HERE'
@@ -11,7 +11,6 @@ env:
 
 jobs:
   terraform:
-    if: github.repository != 'sharadv07/mc-poc-ws-api-1'
     name: 'Terraform Plan'
     runs-on: ubuntu-latest
     permissions:
