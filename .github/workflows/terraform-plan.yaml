@@ -6,7 +6,7 @@ on:
 env:
   TF_CLOUD_ORGANIZATION: 'YOUR-ORGANIZATION-HERE'
   TF_API_TOKEN: '${{ secrets.TF_API_TOKEN }}'
-  TF_WORKSPACE: 'mc-poc-ws-api-1
+  TF_WORKSPACE: 'mc-poc-ws-api-1'
   CONFIG_DIRECTORY: './'
 
 jobs:
