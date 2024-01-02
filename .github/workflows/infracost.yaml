@@ -44,7 +44,7 @@ jobs:
 
       # Posts a comment to the PR using the 'update' behavior
       - name: Post Infracost comment
-      run: |
+        run: |
           infracost comment github --path=/tmp/infracost.json \
                                    --repo=$GITHUB_REPOSITORY \
                                    --github-token=${{github.token}} \
